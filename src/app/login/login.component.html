@@ -1,0 +1,14 @@
+<div class="container">
+    <form action="" *ngIf="!userLogged">
+        <span>Login:</span><input type="text" name="login" [(ngModel)]="auth.login"> <br>
+        <span>Password:</span><input type="password" name="password" [(ngModel)]="auth.password"> <br>
+        <span>{{error}}</span><br>
+        <button (click)="checkUser(auth)">Submit</button>
+    </form>
+
+
+    <div class="user-logged" *ngIf="userLogged">
+        <h1>Вітаю Адмін!</h1>
+        <button (click)="signOut()">Sign Out</button>
+    </div>
+</div>

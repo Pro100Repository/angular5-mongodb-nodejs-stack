@@ -1,0 +1,60 @@
+header {
+    border: 1px solid black;
+    background: url('http://ramonchevron.gen.powersites.net/wp-content/uploads/sites/311/2017/06/bg.jpg');
+    margin-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    a {
+        padding: 15px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        text-decoration: none;
+        position: relative;
+        top: 4px;
+    }
+    .active {
+        top: 6px;
+        left: 2px;
+        opacity: 0.8;
+    }
+    .container {
+        width: 70%;
+        margin: auto;
+        .upper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            color: white;
+            a {}
+            img {
+                width: 200px;
+                height: 150px;
+            }
+        }
+        .lower {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            .left {
+                a {
+                    margin-right: 6px;
+                }
+            }
+            .right {
+                a {}
+            }
+        }
+    }
+}
+
+main {
+    overflow: hidden;
+    .container {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+        width: 70%;
+    }
+}
