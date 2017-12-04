@@ -12,13 +12,16 @@ import { FormsModule }   from '@angular/forms';
 import { MainService } from './main.service';
 import { LoginComponent } from './login/login.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PhotosComponent } from './photos/photos.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: DefaultComponent, pathMatch: 'full' },
   { path: 'catalog', component: CatalogComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'contacts', component: ContactsComponent}
+  { path: 'contacts', component: ContactsComponent},
+  { path: 'photos', component: PhotosComponent}
+  
 ];
 
 @NgModule({
@@ -27,7 +30,8 @@ const appRoutes: Routes = [
     CatalogComponent,
     DefaultComponent,
     LoginComponent,
-    ContactsComponent
+    ContactsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
